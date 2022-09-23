@@ -1,0 +1,124 @@
+//=----------Regi js  for success msg--------------
+
+
+
+// const sendData = (sRate,count)=>{
+//     if(sRate === count){
+//         alert('registration sucessfull');
+//         swal("Welcome! " +firstName,"Registration Successful","success");
+//     }
+// }
+
+// const successMsg=()=>{
+//     let formCon = document.getElementsByClassName('input-box');
+//     var count = formCon.length - 1;
+//     for(var i=0;i<formCon.length;i++){
+//         if(formCon[i].className === "input-box success"){
+//             var sRate = 0+i;
+//             console.log(sRate);
+//             sendData(count);
+//         }else{
+//             return false;
+//         }
+//     }
+// }
+
+
+//----------------Regi.js----------------------------------------
+
+
+    let gender;
+    for (let i = 0; i < 3; i++) {
+      if (radioBtn[i].checked) {
+        radioBtn[i].value;
+        gender = radioBtn[i].value;
+      }
+    }
+
+    let fData = {
+      firstName: firstName.value,
+      lastName: lastName.value,
+      email: email.value,
+      mobileNo: mobileNo.value,
+      password: password.value,
+      cpassword: cpassword.value,
+      radioBtn: gender,
+      selectStream: selectStream.value,
+    };
+    
+    // let flag=true;
+
+    const object = {
+      email: email.value,
+      // password:password.value
+    };
+
+
+
+    fetch("http://localhost:3000/registration")
+      .then((res) => res.json())
+      .then((data) => {
+        data.forEach(async function (registration) {
+          const userInfo = JSON.stringify(registration);
+          const databaseInfo = JSON.stringify(object);
+
+          // console.log(userInfo);
+          // console.log(databaseInfo);
+
+          if (object.email === registration.email) {
+            console.log("registrationjson-email");
+            console.log(registration.email);
+            console.log("objectuser-email");
+            console.log(object.email);
+            console.log("err");
+           
+          // let flag=false;  
+          }  else {
+            let res = axios.post(
+              "http://localhost:3000/registration",
+              fData
+            );
+            let data = res.data;
+            console.log(data);
+  
+            // console.log('success');
+            alert("Regi Successfully..🎉");
+            // window.location.href = "../Login/login.html";
+          }
+        });
+
+        // if(flag==true){
+        //   alert("User already Registered");
+        //   window.location.href = "../Registration/registration.html";
+          
+        // }
+       
+      })
+      .catch((error) => console.log("error"));
+
+
+    // setTimeout(function() { alert("Registration Successfull..✨"); }, 5000);
+    // window.location.href="../Login/login.html";
+  } else {
+    console.log("regierror");
+  }
+}
+
+function setErrorMsg(input, errormsgs) {
+  const inputBox = input.parentElement;
+  const small = inputBox.querySelector("small");
+  inputBox.className = "input-box error";
+  small.innerText = errormsgs;
+}
+
+function setSuccessMsg(input) {
+  const inputBox = input.parentElement;
+  inputBox.className = "input-box success";
+}
+
+//---------------regi got duplicate data not to acept------------------------
+
+
+
+
+

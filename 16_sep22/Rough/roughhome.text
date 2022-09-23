@@ -1,0 +1,160 @@
+
+//--------------HTML of home-----------------
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <!-- <link rel="stylesheet" href="../Registration/registration.css" /> -->
+    <link rel="stylesheet" href="home.css"/>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+</head>
+
+<body>
+
+    <html lang="en">
+     
+            <section>
+                <h1>Table</h1>
+        
+                <table id='table'>            
+                    <tr>
+                        <th>First Name</th>
+                        <th>Last Name </th>
+                        <th>Email Address</th>
+                        <th>Mobile Number</th>
+                        <th>Password</th>
+                        <th>Confirm Password</th>
+                        <th>Gender</th>
+                        <th>Select Stream</th>
+                    </tr>
+            </section>
+
+            
+    <!-- <div class="container">
+        <div>
+            <form id="form">
+            <div class="content">
+                <div class="button input-box">
+                    <input class="btn" type="submit" onclick="CreateTableFromJSON()" value="Create Table From JSON" />
+                <div id="showData"></div>
+                </div>
+              </div>   
+           </div>
+           </div>
+     </div> -->
+        <script src="home.js"></script>
+</body>
+
+</html>
+
+
+//-------------------------------CSS of home-------------------------------
+
+/* th, td, p, input {
+    font:14px Verdana;
+}
+tr{
+    align-items: right;
+}
+table, th, td 
+{
+    border: solid 1px #DDD;
+    border-collapse: collapse;
+    padding: 2px 3px;
+    text-align: center;
+}
+th {
+    font-weight:bold;
+}
+
+.container{
+    max-width: 1000px;
+  } */
+
+  //----------------------Home Javascript for dynamic table-------------------------
+
+// const firstName = document.getElementById("fname");
+// const lastName = document.getElementById("lname");
+// const email = document.getElementById("emailid");
+// const mobileNo = document.getElementById("mobileno");
+// const password = document.getElementById("pass");
+// const cpassword = document.getElementById("cpassword");
+// const radioBtn = document.getElementsByName("gender");
+// const selectStream = document.querySelector("#slctstream");
+
+//  function CreateTableFromJSON() {
+//     const form = document.querySelector('#form');     
+//     form.addEventListener('submit',function(e){
+//         e.preventDefault();
+//         CreateTable();
+//     });
+
+//     async function CreateTable(){
+//         fetch('http://localhost:3000/registration')
+//         .then(res => res.json())
+//         .then(data=>{
+
+//             data.forEach(function(registration){  
+//                 const obj = JSON.stringify(data);
+//                 console.log(obj);
+// //------------
+
+                   
+// var table = document.createElement('table');
+
+// var tr = table.insertRow(-1);
+
+// function iterate(obj,table,tr){
+   
+// for(var props in obj){
+
+//     if(obj.hasOwnProperty(props)){
+
+//         if(typeof obj[props]=='object')
+//             {
+//                 var trNext = table.insertRow(-1);
+//                 var tabCellHead = trNext.insertCell(-1);
+//                 var tabCell = trNext.insertCell(-1);
+//                 var table_in = document.createElement('table'); 
+//                 var tr_in;
+//                 var th = document.createElement("th");      
+//                 th.innerHTML = props;
+
+//                 tabCellHead.appendChild(th);
+//                 tabCell.appendChild(table_in)
+//                 iterate(obj[props],table_in,tr_in);
+//             }
+//         else
+//             {
+//                 if(tr === undefined)
+//                 {
+//                     tr = table.insertRow(-1);
+//                 }
+//                 var tabCell = tr.insertCell(-1);
+//                 console.log(props+' * '+obj[props]);
+//                 tabCell.innerHTML = obj[props];
+//             }
+//     }
+
+// }
+
+// iterate(obj,table,tr);
+
+// var divContainer = document.getElementById("showData");
+//     divContainer.innerHTML = "";
+//     divContainer.appendChild(table);
+
+// }     
+             
+// //-----------
+//             });  
+//         })
+//       .catch(error=>console.log('error'));
+//       };
+//  };
+   

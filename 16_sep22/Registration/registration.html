@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/2.1.2/sweetalert.min.js"></script> -->
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <title>Registration</title>
+    <link rel="stylesheet" href="registration.css" />
+</head>
+
+<body>
+    <div class="container">
+        <div class="title">Registration Form</div>
+        <div class="content">
+            <form action="#" id="form">
+                <div class="user-details">
+                    <div class="input-box">
+                        <label class="details">First Name: </label>
+                        <input type="text" id="fname" placeholder="first name" autocomplete="off">
+                        <i class="fas fa-check-circle"></i>
+                        <small>error msg</small>    
+                    </div>
+                    <div class="input-box">
+                        <label class="details">Last Name: </label>
+                        <input type="text" id="lname" placeholder="last name" autocomplete="off">
+                        <small>error msg</small>
+                    </div>
+                    <div class="input-box">
+                        <Label>Mobile Number: </Label>
+                        <input type="number" id="mobileno" value="" placeholder="Mobile number" autocomplete="off" />
+                        <small>error msg</small>
+                    </div>
+                    <div class="input-box">
+                        <label class="details">Email Address: </label>
+                        <input type="text"  id="emailid" placeholder="Enter your email" autocomplete="off">
+                        <small>error msg</small>
+                    </div>
+
+                    <div class="input-box">
+                        <label class="details">Password: </label>
+                        <input type="password" id="pass" placeholder="Enter your password" autocomplete="off">
+                        <small>error msg</small>
+                    </div>
+                    <div class="input-box">
+                        <label class="details">Confirm Password: </label>
+                        <input type="password"  id="cpassword" placeholder="Confirm your password" autocomplete="off">
+                        <small>error msg</small>
+                    </div>
+                </div>
+
+                <div class="gender-details" class="input-box">
+                    <input type="radio" value="Male" name="gender" id="dot-1" class="radiobtn">
+                    <input type="radio" value="Female" name="gender" id="dot-2" class="radiobtn">
+                    <input type="radio" value="Other" name="gender" id="dot-3" class="radiobtn">
+                    <span class="gender-title">Gender</span>
+                    <div class="category">
+                      <label for="dot-1">
+                      <span class="dot one"></span>
+                      <span class="gender">Male</span>
+                    </label>
+                    <label for="dot-2">
+                      <span class="dot two"></span>
+                      <span class="gender">Female</span>
+                    </label>
+                    <label for="dot-3">
+                      <span class="dot three"></span>
+                      <span class="gender">Other</span>
+                      </label>
+                      <!-- <small>error msg</small> -->
+                    </div> 
+                  </div>
+                
+
+                <div class="gender-details input-box">
+                    <label id="selectlbl">Select Stream: </label>
+                    <select id="slctstream">
+                        <option value="0">Select</option>
+                        <option value="Aerospace/aeronotical engineering" >Aerospace/aeronotical engineering</option>
+                        <option value="Chemical engineering">Chemical engineering</option>
+                        <option value="Civil engineering">Civil engineering</option>
+                        <option value="Mechanical engineering">Mechanical engineering</option>
+                        <option value="Computer engineering">Computer engineering</option>
+                    </select>
+                    <!-- <small>error msg</small> -->
+                </div>
+
+                <div class="button input-box">
+                    <button class="btn" type="submit" value="Register">Register</button><br>
+                    <a href="../Login/login.html">Login</a>
+                </div>
+
+            </form>
+        </div>
+    </div>
+    </form>
+    <script src="registration.js"></script>
+</body>
+
+</html>

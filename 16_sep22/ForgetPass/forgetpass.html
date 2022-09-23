@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reset Password</title>
+    <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+    <link rel="stylesheet" href="../Registration/registration.css" />
+    <link rel="stylesheet" href="forgetpass.css"/>
+</head>
+
+<body>
+    <div class="container">
+        <div class="title">Reset Your Password</div>
+        <form id="form">
+            <div class="content">
+                <div class="user-details">
+                    <div class="input-box">
+                        <label class="details">Verify Email: </label>
+                        <input type="text" id="email" placeholder="Enter email id">
+                        <small>error msg</small>
+                    </div> 
+                    <div class="button input-box">
+                        <button class="btn" type="submit" id="verifybtn" value="Reset">Verify Email</button>
+                    </div>
+                    <div class="input-box">
+                        <label class="details">Enter new password: </label>
+                        <input type="text"  id="password" placeholder="Enter new password" />
+                        <small>error msg</small>
+                    </div> 
+                    
+                    <div class="input-box">
+                        <label class="details">Confirm new password: </label>
+                        <input type="text" id="cpassword" placeholder="Confirm new password" />
+                        <small>error msg</small>
+                    </div> 
+                </div>
+                <div class="button input-box">
+                    <button class="btn" type="submit" value="Reset">Reset password</button>
+                    <button class="btn" onclick='window.location.href="../Login/login.html"'>Cancel</button>
+                </div>
+            </div>
+        </form>
+        <script src="forgetpass.js"></script>
+</body>
+
+</html>

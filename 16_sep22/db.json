@@ -1,0 +1,47 @@
+{
+  "registration": [
+    {
+      "firstName": "rutuja",
+      "lastName": "chandgude",
+      "email": "rutu@gmail.com",
+      "mobileNo": "1234123456",
+      "password": "111222333",
+      "radioBtn": "Female",
+      "selectStream": "Civil engineering",
+      "id": 3
+    },
+    {
+      "firstName": "harshali",
+      "lastName": "bacchav",
+      "email": "Harshu@gmail.com",
+      "mobileNo": "1234567890",
+      "password": "Harshu@123",
+      "cpassword": "Harshu@123",
+      "radioBtn": "Female",
+      "selectStream": "Civil engineering",
+      "id": 9
+    },
+    {
+      "firstName": "Rushi",
+      "lastName": "Gawade",
+      "email": "Rushi@gmail.com",
+      "mobileNo": "1234567890",
+      "password": "Rushi@123",
+      "cpassword": "Rushi@123",
+      "radioBtn": "Male",
+      "selectStream": "Mechanical engineering",
+      "id": 10
+    },
+    {
+      "firstName": "qwerrrrrrr",
+      "lastName": "wertg",
+      "email": "sham@gmail.com",
+      "mobileNo": "1234567890",
+      "password": "Sham@123",
+      "cpassword": "Sham@123",
+      "radioBtn": "Male",
+      "selectStream": "Chemical engineering",
+      "id": 11
+    }
+  ]
+}
